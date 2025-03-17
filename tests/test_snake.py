@@ -1,6 +1,11 @@
 import unittest
-from Snake import Snake
-from turtle import Turtle
+from unittest.mock import MagicMock, patch
+import sys
+
+# Mocking turtle for headless Jenkins environments
+sys.modules["turtle"] = MagicMock()
+
+from Snake import Snake  # Import after mocking
 
 class TestSnake(unittest.TestCase):
 
