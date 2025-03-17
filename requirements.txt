@@ -2,4 +2,3 @@ flask
 pytest
 build
 setuptools
-turtle
