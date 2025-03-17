@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose necessary ports (if required)
-EXPOSE 5000  # Modify if needed
+EXPOSE 5000 
 
 # Run the game (update this based on how the game is launched)
 CMD ["python", "main.py"]
